@@ -7,7 +7,7 @@ const port = 5000;
 app.use(express.static(path.join(__dirname, "public")))
 app.get("/", async (req, res) => {
     console.log(path.join(__dirname, "public"));
-    res.sendFile(path.join(__dirname, "publi","index.html"));
+    res.sendFile(path.join(__dirname, "public","index.html"));
 })
 
 app.listen(port, () => {
