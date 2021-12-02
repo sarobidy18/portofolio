@@ -4,6 +4,7 @@
   "description": "simple portofolio for Sarobidy RANAIVOSAMIMANANA",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sarobidy RANAIVOSAMIMANANA",
