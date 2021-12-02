@@ -5,9 +5,9 @@ const app = express();
 const port = 5000;
 
 app.use(express.static(path.join(__dirname, "public")))
-app.get("/", async (req, res) => {
-    console.log(path.join(__dirname, "public"));
-    res.sendFile(path.join(__dirname, "public","index.html"));
+app.set("views",path.join(__dirname, "public"))
+app.get("/",(req, res) => {
+    res.render("index");
 })
 
 app.listen(port, () => {
