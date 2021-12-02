@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
-const port = 5000;
+const Port = process.env || 5000;
 
 app.use(express.static(path.join(__dirname, "public")))
 app.set("views",path.join(__dirname, "public"))
@@ -10,6 +10,6 @@ app.get("/",(req, res) => {
     res.render("index");
 })
 
-app.listen(port, () => {
-    console.log(`app listen on port : ${port}`);
+app.listen(Port, () => {
+    console.log(`app listen on Port : ${Port}`);
 })
